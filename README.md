@@ -7,6 +7,7 @@
 3. [Operadores](#operadores)
 4. [Propiedades y Métodos Importantes](#propiedades-y-métodos-importantes)
 5. [Estructuras Condicionales](#estructuras-condicionales)
+6. [Parseo de Datos](#parseo-de-datos)
 
 ## Variables
 
@@ -116,6 +117,13 @@ if (a > 3) {
 }
 ```
 
+### Operador Ternario
+
+```javascript
+let edad = 18;
+let puedeVotar = (edad >= 18) ? "Sí" : "No"; // Si la edad es mayor o igual a 18, devuelve "Sí", de lo contrario, devuelve "No"
+```
+
 ### Switch
 
 ```javascript
@@ -130,4 +138,22 @@ switch (x) {
     default:
         console.log("x no es 1 ni 2");
 }
+```
+
+## Parseo de Datos
+### Parseo de Cadenas a Números
+
+```javascript
+let cadenaNumerica = "123.45";
+let numeroEntero = parseInt(cadenaNumerica); // 123
+let numeroDecimal = parseFloat(cadenaNumerica); // 123.45
+let numeroConNumber = Number(cadenaNumerica); // 123.45
+```
+
+### Parseo de Números a Cadenas
+
+```javascript
+let numero = 123;
+let cadena = numero.toString(); // "123"
+let cadenaConComillas = String(numero); // "123"
 ```
