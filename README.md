@@ -1,4 +1,3 @@
-
 # 📓 JavaScript Cheatsheet
 
 ## Índice
@@ -7,7 +6,8 @@
 3. [Operadores](#operadores)
 4. [Propiedades y Métodos Importantes](#propiedades-y-métodos-importantes)
 5. [Estructuras Condicionales](#estructuras-condicionales)
-6. [Parseo de Datos](#parseo-de-datos)
+6. [Estructuras Repetitivas](#estructuras-repetitivas)
+7. [Parseo de Datos](#parseo-de-datos)
 
 ## Variables
 
@@ -137,6 +137,53 @@ switch (x) {
         break;
     default:
         console.log("x no es 1 ni 2");
+}
+```
+
+## Estructuras Repetitivas
+
+### For
+```javascript
+for (let i = 0; i < 5; i++) {
+    console.log(i); // Imprime los números del 0 al 4
+}
+```
+
+### While
+```javascript
+let i = 0;
+while (i < 5) {
+    console.log(i); // Imprime los números del 0 al 4
+    i++;
+}
+```
+
+### Do-While
+```javascript
+let i = 0;
+do {
+    console.log(i); // Imprime los números del 0 al 4
+    i++;
+} while (i < 5);
+```
+
+### Break
+```javascript
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        break; // Sale del bucle cuando i es igual a 5
+    }
+    console.log(i);
+}
+```
+
+### Continue
+```javascript
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        continue; // Salta a la siguiente iteración cuando i es igual a 5
+    }
+    console.log(i);
 }
 ```
 
